@@ -1,8 +1,0 @@
-streamlit
-pandas
-openpyxl
-matplotlib
-seaborn
-python-pptx
-python-docx
-comtypes; sys_platform == 'win32'
