@@ -1,7 +1,11 @@
 import streamlit as st
 import pandas as pd
 import os
+import sys
 import tempfile
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from src.data_processor import generate_sample_data, load_data, map_columns
 from src.chart_generator import (
     create_overview_chart, 
@@ -156,6 +160,12 @@ else:
     - **粉丝量** (整数)
     - **涨粉量** (整数)
     - **点赞数** (整数)
+    - **评论数** (整数)
+    - **分享数** (整数)
+    - **收藏数** (整数)
+    - **播放量** (整数)
+    """)
+
     - **评论数** (整数)
     - **分享数** (整数)
     - **收藏数** (整数)
